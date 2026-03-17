@@ -11,19 +11,26 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
+// Rotas
 app.use('/cep', cepRoutes);
 app.use('/auth', authRoutes);
 app.use('/consultas', consultasRoutes);
 app.use('/clima', climaRoutes);
 
+// Rota inicial
 app.get('/', (req, res) => {
   res.send('API Clínica Médica funcionando 🚀');
 });
 
-connectDatabase();
-
 const PORT = process.env.PORT || 3000;
 
-app.listen(PORT, () => {
-  console.log(`Servidor rodando na porta ${PORT}`);
-});
+// Conectar banco e só depois subir servidor
+connectDatabase()
+  .then(() => {
+    app.listen(PORT, () => {
+      console.log(`Servidor rodando na porta ${PORT}`);
+    });
+  })
+  .catch(error => {
+    console.error('Erro ao conectar no banco:', error);
+  });

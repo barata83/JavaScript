@@ -5,11 +5,9 @@
   "main": "dist/server.js",
   "scripts": {
     "dev": "ts-node-dev src/server.ts",
-    "build": "tsc",
+    "build": "npx tsc",
     "start": "node dist/server.js"
   },
-  "keywords": [],
-  "author": "",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
@@ -20,7 +18,7 @@
     "jsonwebtoken": "^9.0.3",
     "mongoose": "^9.3.0"
   },
-  "dependencies": {
+  "devDependencies": {
     "@types/cors": "^2.8.19",
     "@types/express": "^5.0.6",
     "@types/mongoose": "^5.11.96",
