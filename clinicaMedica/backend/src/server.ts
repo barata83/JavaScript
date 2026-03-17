@@ -11,21 +11,17 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-// Rotas
 app.use('/cep', cepRoutes);
 app.use('/auth', authRoutes);
 app.use('/consultas', consultasRoutes);
 app.use('/clima', climaRoutes);
 
-// Rota inicial para teste
 app.get('/', (req, res) => {
   res.send('API Clínica Médica funcionando 🚀');
 });
 
-// Conectar banco
 connectDatabase();
 
-// Porta correta para deploy
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
