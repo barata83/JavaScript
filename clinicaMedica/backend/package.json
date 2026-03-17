@@ -1,13 +1,14 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "API do sistema de agendamento de consultas",
+  "main": "src/server.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "ts-node-dev src/server.ts",
+    "dev": "ts-node-dev src/server.ts"
   },
   "keywords": [],
-  "author": "",
+  "author": "Leandro",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
