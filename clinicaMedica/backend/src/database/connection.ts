@@ -8,6 +8,7 @@ export async function connectDatabase() {
     if (!process.env.MONGO_URI) {
       throw new Error('A variável de ambiente MONGO_URI não foi definida!');
     }
+
     console.log('MONGO_URI ->', process.env.MONGO_URI);
     await mongoose.connect(process.env.MONGO_URI);
     console.log('Banco conectado');
