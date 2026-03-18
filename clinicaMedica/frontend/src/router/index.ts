@@ -23,7 +23,7 @@ const router = createRouter({
 
 export default router;
 
-router.beforeEach((to, from, next) => {
+router.beforeEach((to, _from, next) => {
   const token = localStorage.getItem('token');
 
   if (!token && to.path !== '/') {
