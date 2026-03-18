@@ -2,7 +2,6 @@ import mongoose from 'mongoose';
 
 export async function connectDatabase() {
   try {
-    // Adicionado para depuração:
     console.log('Tentando conectar... URI:', process.env.MONGO_URI);
 
     if (!process.env.MONGO_URI) {
