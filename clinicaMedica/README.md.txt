@@ -121,9 +121,53 @@ O token é armazenado no **localStorage do navegador**.
 
 ---
 
+🌐 Deploy da Aplicação
+
+A aplicação foi publicada utilizando serviços de deploy modernos:
+
+Frontend hospedado no Vercel
+
+Backend hospedado no Railway
+
+Banco de dados no MongoDB
+
+🔗 Acesso ao Sistema
+
+👉 Frontend (interface do usuário):
+https://clinica-medica-moeqliajl-barata83s-projects.vercel.app/
+
+👉 Backend (API):
+https://marvelous-emotion-production-75bc.up.railway.app/
+
+🔑 Acesso para Testes
+
+Para testar o sistema, utilize:
+
+Email: leandro@email.com
+
+Senha: 123456
+
+▶️ Como testar a aplicação
+
+Acesse o link do frontend
+
+Faça login com o usuário informado
+
+Vá para a tela de agendamento
+
+Cadastre uma nova consulta
+
+Edite ou exclua consultas existentes
+
+⚙️ Sobre o Deploy
+
+O frontend foi configurado para consumir a API publicada no Railway, permitindo comunicação entre as camadas da aplicação.
+
+O backend está conectado ao banco de dados MongoDB Atlas, garantindo persistência dos dados em nuvem.
+
 # 👨‍💻 Autor
 
-Projeto desenvolvido por **Leandro**  
+Projeto desenvolvido por **Leandro Correa Barata**  
 Curso: **Análise e Desenvolvimento de Sistemas**
 
 
